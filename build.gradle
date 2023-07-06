@@ -1,0 +1,14 @@
+subprojects {
+    buildscript {
+        ext {
+            protobufVersion = '3.17.3'
+            protobufPluginVersion = '0.8.18'
+            grpcVersion = '1.42.1'
+        }
+    }
+
+    repositories {
+        mavenCentral()
+    }
+
+}

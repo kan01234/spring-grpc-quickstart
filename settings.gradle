@@ -1,0 +1,4 @@
+rootProject.name = 'spring-grpc-quickstart'
+
+include 'grpc-interface'
+include 'grpc-server'

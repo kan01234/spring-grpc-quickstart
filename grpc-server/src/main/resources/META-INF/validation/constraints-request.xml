@@ -1,0 +1,18 @@
+<constraint-mappings
+        xmlns="http://xmlns.jcp.org/xml/ns/validation/mapping"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/validation/mapping
+            http://xmlns.jcp.org/xml/ns/validation/mapping/validation-mapping-2.0.xsd"
+        version="2.0">
+
+    <bean class="com.kan01234.spring.grpc.quickstart.HelloRequest">
+        <getter name="name">
+            <constraint annotation="javax.validation.constraints.NotBlank" />
+            <constraint annotation="javax.validation.constraints.Size">
+                <element name="min">1</element>
+                <element name="max">255</element>
+            </constraint>
+        </getter>
+    </bean>
+
+</constraint-mappings>
